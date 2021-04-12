@@ -1,0 +1,39 @@
+schema {
+    query : GadgetQuery
+    mutation: GadgetMutation
+}
+
+## Root type
+type GadgetQuery {
+    application : String
+    gadget(gadgetId : String!) : GadgetResponse
+    allGadgets : [GadgetResponse]!
+}
+
+## Root type
+type GadgetMutation {
+    persistGadgetData(gadgetInput : GadgetInput) : GadgetResponse
+}
+
+type Gadget {
+    gadgetId: String!
+    gadgetName: String!
+    gadgetCategory: String
+    gadgetAvailability: Boolean!
+    gadgetPrice: Float!
+}
+
+type GadgetResponse {
+    gadgetId: String!
+    gadgetName: String!
+    gadgetCategory: String
+    gadgetAvailability: Boolean!
+    gadgetPrice: Float!
+}
+
+input GadgetInput {
+    gadgetName: String!
+    gadgetCategory: String
+    gadgetAvailability: Boolean!
+    gadgetPrice: Float!
+}

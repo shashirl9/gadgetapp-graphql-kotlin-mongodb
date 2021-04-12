@@ -1,0 +1,15 @@
+## Server port
+server:
+  port: 9997
+
+## Graphiql Mapping
+graphiql:
+  mapping: gadget-ui
+
+## Mongo configuration
+spring:
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      database: gadgetdb
