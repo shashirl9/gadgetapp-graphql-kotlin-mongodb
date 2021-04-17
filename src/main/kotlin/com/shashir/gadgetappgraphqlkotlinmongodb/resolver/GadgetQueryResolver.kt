@@ -6,7 +6,7 @@ import com.shashir.gadgetappgraphqlkotlinmongodb.model.GadgetResponse
 import com.shashir.gadgetappgraphqlkotlinmongodb.repository.GadgetRepository
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.stereotype.Component
-import java.util.ArrayList
+import java.util.*
 
 @Component
 class GadgetQueryResolver : GraphQLQueryResolver {
