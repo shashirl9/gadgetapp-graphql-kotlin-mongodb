@@ -14,7 +14,7 @@
 	<name>gadgetapp-graphql-kotlin-mongodb</name>
 	<description>GraphQL Crud API with Spring Boot, Kotlin and MongoDB</description>
 	<properties>
-		<java.version>11</java.version>
+		<java.version>1.8</java.version>
 		<kotlin.version>1.4.31</kotlin.version>
 	</properties>
 	<dependencies>
