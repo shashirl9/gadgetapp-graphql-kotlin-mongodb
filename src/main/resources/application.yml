@@ -10,6 +10,6 @@ graphiql:
 spring:
   data:
     mongodb:
-      host: 172.17.0.15
+      host: 172.17.0.11
       port: 27017
       database: srsgadgetdb
